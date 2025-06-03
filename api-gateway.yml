@@ -15,7 +15,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: ${DISCOVERY_SERVICE_HOST}:${DISCOVERY_SERVICE_PORT}/eureka/
+      defaultZone: ${DISCOVERY_SERVICE_HOST}:${DISCOVERY_SERVICE_PORT}
 
 management:
   endpoints:
