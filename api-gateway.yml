@@ -12,7 +12,10 @@ spring:
           uri: ${USER_SERVICE_HOST}:${USER_SERVICE_PORT}
           predicates:
             - Path=/api/users/**
-
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_SERVICE_HOST}:${DISCOVERY_SERVICE_PORT}/eureka/
 
 management:
   endpoints:
